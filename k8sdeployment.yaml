@@ -18,7 +18,7 @@ spec:
       - name: thanuj-kumar-container
         image: thanujkumar1618/health-care-app
         ports:
-        - containerPort: 8083
+        - containerPort: 8085
 ---
 apiVersion: v1
 kind: Service
@@ -32,6 +32,6 @@ spec:
 
   type: NodePort
   ports:
-  - nodePort: 31002
-    port: 8083
-    targetPort: 8083
+  - nodePort: 31021
+    port: 8085
+    targetPort: 8085
