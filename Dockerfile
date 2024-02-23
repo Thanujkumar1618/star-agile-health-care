@@ -1,5 +1,3 @@
 FROM openjdk:11
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
-EXPOSE 8085
+COPY target/medicure-0.0.1-SNAPSHOT.jar /app/medicure-project.jar
+ENTRYPOINT ["java","-jar","/app/medicure-project.jar"]
