@@ -15,7 +15,7 @@ spec:
         app: health-care-app
     spec:
       containers:
-      - name: thanuj-kumar-container
+      - name: health-care-container
         image: thanujkumar1618/health-care-app
         ports:
         - containerPort: 8085
@@ -32,6 +32,6 @@ spec:
 
   type: NodePort
   ports:
-  - nodePort: 31021
+  - nodePort: 31035
     port: 8085
     targetPort: 8085
